@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hi 
+    <!-- 
+    locals can be used to access the variables passed by the express render method
+    we can add the fall back value if the variable is not passed by the server side to the client
+    -->
+    <%= locals.text || 'Default' %>
+  </h1>
+</body>
+</html>
