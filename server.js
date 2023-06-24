@@ -9,8 +9,9 @@ app.set("view engine", "ejs");
 
 // basic routing
 app.get("/", (req, res) => {
-  res.render("index", { text12: "Sameer" });
+  res.render("index", { text: "Sameer" });
 });
+
 
 app.use("/users", userRouter);
 
