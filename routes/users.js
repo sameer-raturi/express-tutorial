@@ -3,6 +3,8 @@ const express = require("express");
 // routers is kind of the mini app
 const routers = express.Router();
 
+// this router apps will use the logger
+// routers.use(logger);
 routers.get("/", (req, res) => {
   res.send("User List");
 });
